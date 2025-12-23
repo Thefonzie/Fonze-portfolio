@@ -2,32 +2,46 @@ import { Badge } from '@/components/ui/badge';
 
 const projects = [
   {
-    title: 'SkyWars Network',
-    description: 'Configured a complete SkyWars setup for a network handling 500+ concurrent players, including custom kits, automated map rotation, and full economy integration.',
-    tags: ['Spigot', 'SkyWars', 'Economy'],
-    players: '500+',
+    title: 'HeartHeist',
+    description: 'A Lifesteal-based server where I currently work as a Developer, handling plugin configuration and server optimization.',
+    tags: ['Lifesteal', 'Developer'],
+    role: 'Developer',
+    status: 'Present',
+  },
+  {
+    title: 'SolarityMC',
+    description: 'A Gens SMP server where I serve as Developer, responsible for plugin setup and server maintenance.',
+    tags: ['Gens', 'SMP', 'Developer'],
+    role: 'Developer',
+    status: 'Present',
+  },
+  {
+    title: 'Elmlands',
+    description: 'An SMP that I owned and developed with many custom features and plugins. Within the first day of release, it generated nearly $2,000 in revenue.',
+    tags: ['SMP', 'Custom Plugins', 'Owner'],
+    role: 'Owner / Developer',
     status: 'Completed',
   },
   {
-    title: 'Survival Plus Server',
-    description: 'Built an enhanced survival experience with custom world generation, intuitive land claims, and a balanced economy designed for long-term player retention.',
-    tags: ['Paper', 'Survival', 'Claims'],
-    players: '150+',
+    title: 'Oneblock Odyssey',
+    description: 'A oneblock server with many custom features. I was in charge of creating and configuring the entire server in just under a week.',
+    tags: ['Oneblock', 'Custom Features'],
+    role: 'Developer',
     status: 'Completed',
   },
   {
-    title: 'Creative Build Hub',
-    description: 'Developed a creative server with WorldEdit optimization, efficient plot system, and custom building tools focused on performance with large-scale builds.',
-    tags: ['Creative', 'WorldEdit', 'Plots'],
-    players: '200+',
+    title: 'PirateMC',
+    description: 'A heavily modified version of SuperiorSkyblock2 featuring island raiding, custom GUIs, and numerous custom features.',
+    tags: ['Skyblock', 'SuperiorSkyblock2', 'Custom GUIs'],
+    role: 'Admin / Developer',
     status: 'Completed',
   },
   {
-    title: 'RPG Adventures',
-    description: 'Currently building a full RPG experience with custom quests, dungeons, class systems, and skills. Complex plugin integration for immersive gameplay.',
-    tags: ['RPG', 'Quests', 'MythicMobs'],
-    players: '100+',
-    status: 'In Progress',
+    title: 'RizzNetwork',
+    description: 'A box server based on Minehut where I managed stability, updates, and staff management.',
+    tags: ['Minehut', 'Box Server', 'Management'],
+    role: 'Development Manager',
+    status: 'Completed',
   },
 ];
 
@@ -56,19 +70,21 @@ const Projects = () => {
                 <h3 className="text-foreground font-medium">{project.title}</h3>
                 <Badge 
                   variant="outline"
-                  className={project.status === 'Completed' 
+                  className={project.status === 'Present' 
                     ? 'border-grass/50 text-grass text-xs' 
-                    : 'border-gold/50 text-gold text-xs'}
+                    : 'border-muted-foreground/50 text-muted-foreground text-xs'}
                 >
                   {project.status}
                 </Badge>
               </div>
+
+              <p className="text-xs text-gold/80 mb-3">{project.role}</p>
               
               <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
                 {project.description}
               </p>
 
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
@@ -77,10 +93,6 @@ const Projects = () => {
                     {tag}
                   </span>
                 ))}
-              </div>
-
-              <div className="text-xs text-muted-foreground/70">
-                {project.players} concurrent players
               </div>
             </div>
           ))}

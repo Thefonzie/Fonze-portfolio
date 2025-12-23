@@ -29,6 +29,12 @@ const Navbar = () => {
         
         <div className="hidden md:flex items-center gap-8">
           <button
+            onClick={() => scrollTo('about')}
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            About
+          </button>
+          <button
             onClick={() => scrollTo('services')}
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
