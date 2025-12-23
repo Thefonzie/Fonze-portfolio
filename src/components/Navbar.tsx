@@ -19,12 +19,12 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-background/95 backdrop-blur-sm border-b-2 border-border' : 'bg-transparent'
+        scrolled ? 'bg-background/95 backdrop-blur-sm border-b border-border/50' : 'bg-transparent'
       }`}
     >
       <div className="container max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="font-pixel text-xs text-grass">
-          MC CONFIG
+        <div className="font-pixel text-xs text-foreground">
+          YOUR NAME
         </div>
         
         <div className="hidden md:flex items-center gap-8">

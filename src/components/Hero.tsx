@@ -8,43 +8,42 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center relative px-4">
-      {/* Decorative blocks */}
-      <div className="absolute top-20 left-10 w-8 h-8 bg-grass/30 rotate-12 animate-float" style={{ animationDelay: '0s' }} />
-      <div className="absolute top-40 right-20 w-6 h-6 bg-gold/30 -rotate-6 animate-float" style={{ animationDelay: '1s' }} />
-      <div className="absolute bottom-40 left-20 w-10 h-10 bg-diamond/20 rotate-45 animate-float" style={{ animationDelay: '2s' }} />
-      <div className="absolute bottom-20 right-10 w-4 h-4 bg-redstone/30 rotate-12 animate-float" style={{ animationDelay: '0.5s' }} />
+      {/* Subtle decorative elements */}
+      <div className="absolute top-32 left-16 w-3 h-3 bg-grass/20 rotate-45" />
+      <div className="absolute top-48 right-24 w-2 h-2 bg-gold/20 rotate-12" />
+      <div className="absolute bottom-48 left-24 w-4 h-4 bg-diamond/15 rotate-45" />
 
-      <div className="text-center z-10 animate-fade-in">
-        {/* Pixel art icon */}
-        <div className="w-24 h-24 mx-auto mb-8 bg-card-gradient border-4 border-grass shadow-block flex items-center justify-center">
-          <span className="text-4xl">⛏️</span>
-        </div>
+      <div className="text-center z-10 animate-fade-in max-w-3xl">
+        <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-6">
+          Minecraft Server Specialist
+        </p>
 
-        <h1 className="font-pixel text-2xl md:text-4xl lg:text-5xl text-gradient-grass mb-6 leading-relaxed">
-          MINECRAFT CONFIG
+        <h1 className="font-pixel text-xl md:text-3xl lg:text-4xl text-foreground mb-6 leading-relaxed">
+          Hi, I'm <span className="text-gradient-grass">Your Name</span>
         </h1>
         
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4">
-          Custom server configurations, plugins setup, and optimization
+        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed">
+          I craft high-performance Minecraft servers with custom configurations, 
+          plugin setups, and optimizations that deliver exceptional gameplay experiences.
         </p>
         
-        <p className="text-muted-foreground mb-12">
-          Crafting perfect server experiences since 2020
+        <p className="text-sm text-muted-foreground/70 mb-12">
+          5+ years helping server owners build thriving communities
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button variant="pixel" size="xl" onClick={scrollToProjects}>
-            VIEW PROJECTS
+            VIEW MY WORK
           </Button>
           <Button variant="outline" size="xl" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
-            Contact Me
+            Get in Touch
           </Button>
         </div>
       </div>
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <ChevronDown className="w-8 h-8 text-grass" />
+        <ChevronDown className="w-6 h-6 text-grass/50" />
       </div>
     </section>
   );

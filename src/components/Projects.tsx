@@ -1,32 +1,30 @@
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { ExternalLink } from 'lucide-react';
 
 const projects = [
   {
     title: 'SkyWars Network',
-    description: 'Complete SkyWars configuration for a network handling 500+ concurrent players. Includes custom kits, maps rotation, and economy integration.',
+    description: 'Configured a complete SkyWars setup for a network handling 500+ concurrent players, including custom kits, automated map rotation, and full economy integration.',
     tags: ['Spigot', 'SkyWars', 'Economy'],
     players: '500+',
     status: 'Completed',
   },
   {
     title: 'Survival Plus Server',
-    description: 'Enhanced survival experience with custom world generation, land claims, and balanced economy. Optimized for long-term play.',
+    description: 'Built an enhanced survival experience with custom world generation, intuitive land claims, and a balanced economy designed for long-term player retention.',
     tags: ['Paper', 'Survival', 'Claims'],
     players: '150+',
     status: 'Completed',
   },
   {
     title: 'Creative Build Hub',
-    description: 'Creative server with WorldEdit optimization, plot system, and custom building tools. Focus on performance with large builds.',
+    description: 'Developed a creative server with WorldEdit optimization, efficient plot system, and custom building tools focused on performance with large-scale builds.',
     tags: ['Creative', 'WorldEdit', 'Plots'],
     players: '200+',
     status: 'Completed',
   },
   {
     title: 'RPG Adventures',
-    description: 'Full RPG server setup with custom quests, dungeons, classes, and skills. Complex plugin integration for immersive gameplay.',
+    description: 'Currently building a full RPG experience with custom quests, dungeons, class systems, and skills. Complex plugin integration for immersive gameplay.',
     tags: ['RPG', 'Quests', 'MythicMobs'],
     players: '100+',
     status: 'In Progress',
@@ -35,59 +33,54 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-24 px-4 bg-muted/30">
+    <section id="projects" className="py-24 px-4 bg-muted/20">
       <div className="container max-w-6xl mx-auto">
-        <h2 className="font-pixel text-xl md:text-2xl text-center text-gradient-gold mb-4">
-          PROJECTS
+        <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground text-center mb-3">
+          Portfolio
+        </p>
+        <h2 className="font-pixel text-lg md:text-xl text-center text-foreground mb-4">
+          Recent Projects
         </h2>
-        <p className="text-muted-foreground text-center mb-16 max-w-xl mx-auto">
-          Some of my recent server configurations and setups
+        <p className="text-muted-foreground text-center mb-16 max-w-xl mx-auto text-sm">
+          A selection of server configurations I've completed for clients
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className="bg-card-gradient border-2 border-border overflow-hidden shadow-block hover:shadow-glow transition-all duration-300 opacity-0 animate-fade-in group"
-              style={{ animationDelay: `${index * 0.15}s` }}
+              className="bg-card border border-border p-6 hover:border-grass/30 transition-all duration-300 opacity-0 animate-fade-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Header bar */}
-              <div className="h-2 bg-gradient-to-r from-grass via-gold to-diamond" />
+              <div className="flex items-start justify-between mb-4">
+                <h3 className="text-foreground font-medium">{project.title}</h3>
+                <Badge 
+                  variant="outline"
+                  className={project.status === 'Completed' 
+                    ? 'border-grass/50 text-grass text-xs' 
+                    : 'border-gold/50 text-gold text-xs'}
+                >
+                  {project.status}
+                </Badge>
+              </div>
               
-              <div className="p-6">
-                <div className="flex items-start justify-between mb-4">
-                  <h3 className="font-pixel text-sm text-foreground">{project.title}</h3>
-                  <Badge 
-                    variant={project.status === 'Completed' ? 'default' : 'secondary'}
-                    className={project.status === 'Completed' ? 'bg-grass text-background' : 'bg-gold text-background'}
+              <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
+                {project.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-xs px-2 py-1 bg-muted text-muted-foreground"
                   >
-                    {project.status}
-                  </Badge>
-                </div>
-                
-                <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
-                  {project.description}
-                </p>
-
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs px-3 py-1 bg-muted border border-border text-muted-foreground"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="flex items-center justify-between">
-                  <span className="text-xs text-muted-foreground">
-                    👥 {project.players} players
+                    {tag}
                   </span>
-                  <Button variant="ghost" size="sm" className="group-hover:text-grass transition-colors">
-                    Details <ExternalLink className="w-3 h-3 ml-1" />
-                  </Button>
-                </div>
+                ))}
+              </div>
+
+              <div className="text-xs text-muted-foreground/70">
+                {project.players} concurrent players
               </div>
             </div>
           ))}
