@@ -19,7 +19,7 @@ const Hero = () => {
         </p>
 
         <h1 className="font-pixel text-xl md:text-3xl lg:text-4xl text-foreground mb-6 leading-relaxed">
-          Hi, I'm <span className="text-gradient-grass">Your Name</span>
+          Hi, I'm <span className="text-gradient-grass">Fonze</span>
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed">
