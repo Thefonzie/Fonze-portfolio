@@ -28,7 +28,7 @@ const Hero = () => {
         </p>
         
         <p className="text-sm text-muted-foreground/70 mb-12">
-          5+ years helping server owners build thriving communities
+          Configuring servers since 2021
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

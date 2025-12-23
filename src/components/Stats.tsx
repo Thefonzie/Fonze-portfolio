@@ -1,8 +1,8 @@
 const stats = [
-  { value: '50+', label: 'Servers Configured' },
-  { value: '100K+', label: 'Players Served' },
-  { value: '5+', label: 'Years Experience' },
-  { value: '100%', label: 'Satisfaction Rate' },
+  { value: '7+', label: 'Servers Worked On' },
+  { value: '4+', label: 'Years Experience' },
+  { value: '$2K+', label: 'Client Revenue Generated' },
+  { value: '100%', label: 'Dedication' },
 ];
 
 const Stats = () => {
