@@ -24,7 +24,7 @@ const Navbar = () => {
     >
       <div className="container max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="font-pixel text-xs text-foreground">
-          YOUR NAME
+          FONZE
         </div>
         
         <div className="hidden md:flex items-center gap-8">
