@@ -50,6 +50,13 @@ const projects = [
     role: 'Developer',
     status: 'Completed',
   },
+  {
+    title: 'CozyMC',
+    description: 'An SMP server where I contributed to plugin configuration and server administration.',
+    tags: ['SMP', 'Administration'],
+    role: 'Admin / Developer',
+    status: 'Completed',
+  },
 ];
 
 const Projects = () => {
