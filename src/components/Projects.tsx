@@ -43,6 +43,13 @@ const projects = [
     role: 'Development Manager',
     status: 'Completed',
   },
+  {
+    title: 'Rewind Box',
+    description: 'An elytra box server where I handled plugin configuration and server development.',
+    tags: ['Elytra', 'Box Server'],
+    role: 'Developer',
+    status: 'Completed',
+  },
 ];
 
 const Projects = () => {
