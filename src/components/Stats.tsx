@@ -1,7 +1,7 @@
 const stats = [
-  { value: '7+', label: 'Servers Worked On' },
+  { value: '10+', label: 'Servers Worked On' },
   { value: '4+', label: 'Years Experience' },
-  { value: '$2K+', label: 'Client Revenue Generated' },
+  { value: '$10K+', label: 'Client Revenue Generated' },
   { value: '100%', label: 'Dedication' },
 ];
 
