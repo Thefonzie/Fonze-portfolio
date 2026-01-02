@@ -18,30 +18,34 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
           <a
-            href="#"
+            href="https://discord.com/users/Thefonze"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex flex-col items-center p-6 bg-card border border-border hover:border-grass/30 transition-all duration-200 group"
           >
             <MessageSquare className="w-6 h-6 text-muted-foreground group-hover:text-grass transition-colors mb-3" />
             <span className="text-sm text-foreground mb-1">Discord</span>
-            <span className="text-xs text-muted-foreground">@yourusername</span>
+            <span className="text-xs text-muted-foreground">@Thefonze</span>
           </a>
           
           <a
-            href="mailto:your@email.com"
+            href="mailto:mc.thefonze@gmail.com"
             className="flex flex-col items-center p-6 bg-card border border-border hover:border-gold/30 transition-all duration-200 group"
           >
             <Mail className="w-6 h-6 text-muted-foreground group-hover:text-gold transition-colors mb-3" />
             <span className="text-sm text-foreground mb-1">Email</span>
-            <span className="text-xs text-muted-foreground">your@email.com</span>
+            <span className="text-xs text-muted-foreground">mc.thefonze@gmail.com</span>
           </a>
           
           <a
-            href="#"
+            href="https://github.com/Thefonzie"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex flex-col items-center p-6 bg-card border border-border hover:border-diamond/30 transition-all duration-200 group"
           >
             <Github className="w-6 h-6 text-muted-foreground group-hover:text-diamond transition-colors mb-3" />
             <span className="text-sm text-foreground mb-1">GitHub</span>
-            <span className="text-xs text-muted-foreground">@yourusername</span>
+            <span className="text-xs text-muted-foreground">@Thefonzie</span>
           </a>
         </div>
 
