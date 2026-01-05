@@ -2,9 +2,9 @@ import { Badge } from '@/components/ui/badge';
 
 const projects = [
   {
-    title: 'HeartHeist',
-    description: 'A Lifesteal-based server where I currently work as a Developer, handling plugin configuration and server optimization.',
-    tags: ['Lifesteal', 'Developer'],
+    title: 'Unreleased',
+    description: 'Not yet released to the public. Here I am currently in charge of plugin, and server configuration, Pterodactyl Egg Development, sound design and resource pack management.',
+    tags: ['Custom Minigame', 'Developer', 'Fully Custom'],
     role: 'Developer',
     status: 'Present',
   },
@@ -14,6 +14,13 @@ const projects = [
     tags: ['Gens', 'SMP', 'Developer'],
     role: 'Developer',
     status: 'Present',
+  },
+  {
+    title: 'HeartHeist',
+    description: 'A Lifesteal-based server where I currently work as a Developer, handling plugin configuration and server optimization.',
+    tags: ['Lifesteal', 'Developer'],
+    role: 'Developer',
+    status: 'Completed',
   },
   {
     title: 'Elmlands',

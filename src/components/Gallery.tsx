@@ -3,34 +3,94 @@ import { useState } from 'react';
 // Add your images here - replace these placeholder paths with your actual images
 const galleryImages = [
   {
-    src: '/placeholder.svg',
+    src: '/islandtop.png',
     alt: 'Project screenshot 1',
-    title: 'Server Configuration',
+    title: 'Island top menu',
   },
   {
-    src: '/placeholder.svg',
+    src: '/pvpinfo.png',
     alt: 'Project screenshot 2',
-    title: 'Custom GUI',
+    title: 'PvP Info GUI',
   },
   {
-    src: '/placeholder.svg',
+    src: '/levelshop.png',
     alt: 'Project screenshot 3',
-    title: 'Plugin Setup',
+    title: 'Level shop for skyblock',
   },
   {
-    src: '/placeholder.svg',
+    src: '/rizztab.png',
     alt: 'Project screenshot 4',
-    title: 'World Build',
+    title: 'Rizzbox Tab',
   },
   {
-    src: '/placeholder.svg',
+    src: '/januarycrate.png',
     alt: 'Project screenshot 5',
-    title: 'Server Spawn',
+    title: 'January Crate 2026',
   },
   {
-    src: '/placeholder.svg',
+    src: '/proxyconfig.png',
     alt: 'Project screenshot 6',
-    title: 'Custom Feature',
+    title: 'Proxy Configuration',
+  },
+  {
+    src: '/tebexholo.png',
+    alt: 'Project screenshot 6',
+    title: 'Tebex Holo',
+  },
+  {
+    src: '/leaderboardselm.png',
+    alt: 'Project screenshot 6',
+    title: 'Leaderboards Elm',
+  },
+  {
+    src: '/crateselm.png',
+    alt: 'Project screenshot 6',
+    title: 'Crates Elm',
+  },
+  {
+    src: '/baltop.png',
+    alt: 'Project screenshot 6',
+    title: 'baltop menu',
+  },
+  {
+    src: '/helpmenu.png',
+    alt: 'Project screenshot 6',
+    title: 'Help Menu',
+  },
+  {
+    src: '/features.png',
+    alt: 'Project screenshot 6',
+    title: 'Features Menu',
+  },
+  {
+    src: '/rulesmenu.png',
+    alt: 'Project screenshot 6',
+    title: 'Rules Menu',
+  },
+  {
+    src: '/chatcolor.png',
+    alt: 'Project screenshot 6',
+    title: 'Chat Color',
+  },
+  {
+    src: '/mcmmomenu.png',
+    alt: 'Project screenshot 6',
+    title: 'MCMMO Menu',
+  },
+  {
+    src: '/gpextensionconfig.png',
+    alt: 'Project screenshot 6',
+    title: 'Claim Menu',
+  },
+  {
+    src: '/storemenu.png',
+    alt: 'Project screenshot 6',
+    title: 'Store Menu',
+  },
+  {
+    src: '/ajqueue.png',
+    alt: 'Project screenshot 6',
+    title: 'AJ Queue network setup',
   },
 ];
 
