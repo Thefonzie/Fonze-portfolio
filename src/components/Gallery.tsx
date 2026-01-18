@@ -34,63 +34,93 @@ const galleryImages = [
   },
   {
     src: '/tebexholo.png',
-    alt: 'Project screenshot 6',
+    alt: 'Project screenshot 7',
     title: 'Tebex Holo',
   },
   {
     src: '/leaderboardselm.png',
-    alt: 'Project screenshot 6',
+    alt: 'Project screenshot 8',
     title: 'Leaderboards Elm',
   },
   {
     src: '/crateselm.png',
-    alt: 'Project screenshot 6',
+    alt: 'Project screenshot 9',
     title: 'Crates Elm',
   },
   {
     src: '/baltop.png',
-    alt: 'Project screenshot 6',
+    alt: 'Project screenshot 10',
     title: 'baltop menu',
   },
   {
     src: '/helpmenu.png',
-    alt: 'Project screenshot 6',
+    alt: 'Project screenshot 11',
     title: 'Help Menu',
   },
   {
     src: '/features.png',
-    alt: 'Project screenshot 6',
+    alt: 'Project screenshot 12',
     title: 'Features Menu',
   },
   {
     src: '/rulesmenu.png',
-    alt: 'Project screenshot 6',
+    alt: 'Project screenshot 13',
     title: 'Rules Menu',
   },
   {
     src: '/chatcolor.png',
-    alt: 'Project screenshot 6',
+    alt: 'Project screenshot 14',
     title: 'Chat Color',
   },
   {
     src: '/mcmmomenu.png',
-    alt: 'Project screenshot 6',
+    alt: 'Project screenshot 15',
     title: 'MCMMO Menu',
   },
   {
     src: '/gpextensionconfig.png',
-    alt: 'Project screenshot 6',
+    alt: 'Project screenshot 16',
     title: 'Claim Menu',
   },
   {
     src: '/storemenu.png',
-    alt: 'Project screenshot 6',
+    alt: 'Project screenshot 17',
     title: 'Store Menu',
   },
   {
     src: '/ajqueue.png',
-    alt: 'Project screenshot 6',
+    alt: 'Project screenshot 18',
     title: 'AJ Queue network setup',
+  },
+  {
+    src: '/customchat.png',
+    alt: 'Project screenshot 19',
+    title: 'Custom Chat setup',
+  },
+  {
+    src: '/serverrebrand.png',
+    alt: 'Project screenshot 20',
+    title: 'Server Re-brand',
+  },
+  {
+    src: '/mythicmobs.png',
+    alt: 'Project screenshot 21',
+    title: 'MythicMobs custom mobs',
+  },
+  {
+    src: '/panelsetup.png',
+    alt: 'Project screenshot 22',
+    title: 'Pterodactyl Panel Setup with experienced optimizations',
+  },
+  {
+    src: '/elitepets.png',
+    alt: 'Project screenshot 23',
+    title: 'ElitePets custom pets configuration',
+  },
+  {
+    src: '/votecrate.png',
+    alt: 'Project screenshot 24',
+    title: 'Vote Crate configuration',
   },
 ];
 
