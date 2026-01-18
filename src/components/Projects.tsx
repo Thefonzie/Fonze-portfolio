@@ -9,6 +9,13 @@ const projects = [
     status: 'Present',
   },
   {
+    title: 'CubeyCraft',
+    description: 'A custom factions server where I am responsible for plugin configuration and server optimization.',
+    tags: ['Factions', 'Developer'],
+    role: 'Developer',
+    status: 'Present',
+  },
+  {
     title: 'SolarityMC',
     description: 'A Gens SMP server where I serve as Developer, responsible for plugin setup and server maintenance.',
     tags: ['Gens', 'SMP', 'Developer'],
