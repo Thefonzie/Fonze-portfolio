@@ -49,7 +49,7 @@ const Contact = () => {
           </a>
         </div>
 
-        <a href="https://discord.gg/your-server" target="_blank" rel="noopener noreferrer">
+        <a href="https://discord.gg/46gUvUNq4m" target="_blank" rel="noopener noreferrer">
           <Button variant="pixel" size="lg">
             START A PROJECT
           </Button>
