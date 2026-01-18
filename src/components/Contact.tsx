@@ -49,9 +49,11 @@ const Contact = () => {
           </a>
         </div>
 
-        <Button variant="pixel" size="lg">
-          START A PROJECT
-        </Button>
+        <a href="https://discord.gg/your-server" target="_blank" rel="noopener noreferrer">
+          <Button variant="pixel" size="lg">
+            START A PROJECT
+          </Button>
+        </a>
       </div>
     </section>
   );
